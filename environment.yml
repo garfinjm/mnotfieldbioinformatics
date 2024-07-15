@@ -5,26 +5,35 @@ channels:
   - defaults
 dependencies:
   - artic-porechop==0.3.2pre
-  - artic-tools==0.3.0
-  - bcftools=1.10.2
-  - biopython=1.76
+  - artic-tools>=0.3.0
+  - bcftools>=1.10.2
+  - biopython>=1.76
   - bwa=0.7.17
   - clint=0.5.1
-  - htslib=1.10.2
-  - minimap2=2.17
-  - multiqc
+  - htslib>=1.10.2
+  - minimap2>=2.17
   - muscle=3.8
-  - nanopolish=0.13.2
+  - nanopolish>=0.13.2
   - nomkl
-  - pandas
+  - pandas>=2.0.3
   - pip
-  - pysam=0.16.0.1
   - pytest
-  - python=3.6
+  - python>=3.6
   - pyvcf=0.6.8
-  - samtools=1.10
+  - samtools>=1.10
   - tqdm
   - whatshap
   - parasail-python
+  - grpcio 
+  - h5py
+  - intervaltree
+  - tensorflow~=2.10.0
+  - numpy>=1.21.6
+  - mappy
+  - pysam>=0.16.0.1       # 0.16.0 is broken, various others too
+  - pyspoa>=0.2.1         # 0.2.0 has `min_coverage` parameter
+  - requests
+  - wurlitzer
   - pip:
-      - medaka==1.2.3
+    - medaka==1.12.0
+    - pyabpoa
